@@ -6,7 +6,7 @@
   "repository": "https://github.com/iconara/blackspace",
   "license": "BSD-3-Clause",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": ">=0.125.0"
   },
   "dependencies": {
     "fs-plus": "2.x",
