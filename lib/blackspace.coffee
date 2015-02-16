@@ -5,10 +5,11 @@ module.exports =
 class Blackspace
   constructor: (atom) ->
     @atom = atom
-    @atom.workspaceView.command 'blackspace:strip-auto-whitespace', '.editor', (e) => @strip(e)
+    @atom.commands.add 'atom-text-editor',
+      'blackspace:strip-auto-whitespace': (e) => @strip(e)
 
   strip: (e) ->
-    editor = @atom.workspaceView.getActiveView().editor
+    editor = @atom.workspace.getActiveTextEditor()
     buffer = editor.getBuffer()
     cursor = editor.getLastCursor()
     currentRow = cursor.getBufferRow()
