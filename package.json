@@ -1,7 +1,7 @@
 {
   "name": "blackspace",
   "main": "./lib/blackspace",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Strips auto indentation whitespace",
   "repository": "https://github.com/iconara/blackspace",
   "license": "BSD-3-Clause",
