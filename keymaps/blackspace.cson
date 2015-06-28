@@ -8,4 +8,16 @@
 # For more detailed documentation see
 # https://atom.io/docs/latest/advanced/keymaps
 'atom-text-editor:not(.mini)':
-  'enter': 'blackspace:strip-auto-whitespace'
+  'enter': 'blackspace:newline'
+
+'.platform-darwin atom-text-editor:not(.mini)':
+  'shift-enter': 'blackspace:newline'
+  'cmd-enter': 'blackspace:newline'
+  'alt-enter': 'blackspace:newline'
+  'shift-cmd-enter': 'blackspace:newline-above'
+
+'.platform-win32 atom-text-editor:not(.mini), .platform-linux atom-text-editor:not(.mini)':
+  'shift-enter': 'blackspace:newline'
+  'ctrl-enter': 'blackspace:newline'
+  'alt-enter': 'blackspace:newline'
+  'ctrl-shift-enter': 'blackspace:newline-above'
