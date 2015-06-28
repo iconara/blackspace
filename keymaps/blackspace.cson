@@ -9,3 +9,13 @@
 # https://atom.io/docs/latest/advanced/keymaps
 'atom-text-editor:not(.mini)':
   'enter': 'blackspace:strip-auto-whitespace'
+
+'.platform-darwin atom-text-editor:not(.mini)':
+  'shift-enter': 'blackspace:strip-auto-whitespace'
+  'cmd-enter': 'blackspace:strip-auto-whitespace'
+  'alt-enter': 'blackspace:strip-auto-whitespace'
+
+'.platform-win32 atom-text-editor:not(.mini), .platform-linux atom-text-editor:not(.mini)':
+  'shift-enter': 'blackspace:strip-auto-whitespace'
+  'ctrl-enter': 'blackspace:strip-auto-whitespace'
+  'alt-enter': 'blackspace:strip-auto-whitespace'
