@@ -19,7 +19,7 @@ describe 'Blackspace', ->
   it 'moves the (auto inserted) whitespace from a blank line to the next line', ->
     editor = atom.workspace.getActiveTextEditor()
     editor.setText("  hello\n  ")
-    atom.commands.dispatch(atom.views.getView(editor), 'blackspace:strip-auto-whitespace')
+    atom.commands.dispatch(atom.views.getView(editor), 'blackspace:newline')
     bufferText = editor.getText()
     bufferText = bufferText.replace(/\n/g, '=').replace(/\s/g, '-')
     expect(bufferText).toBe("--hello==--")

@@ -6,9 +6,9 @@ class Blackspace
   constructor: (atom) ->
     @atom = atom
     @atom.commands.add 'atom-text-editor',
-      'blackspace:strip-auto-whitespace': (e) => @strip(e)
+      'blackspace:newline': (e) => @newline(e)
 
-  strip: (e) ->
+  newline: (e) ->
     editor = @atom.workspace.getActiveTextEditor()
     buffer = editor.getBuffer()
     cursor = editor.getLastCursor()
